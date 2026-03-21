@@ -1,134 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIDev | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIDev | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     
 
-<!-- ================= NAVBAR ================= -->
+<!-- NAVBAR -->
 <header>
-    <div class="container nav-container">
-        <a href="#" class="logo">AIDev</a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+  <div class="container nav">
+    <h2 class="logo">AIDev</h2>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="hero container">
+<!-- HERO -->
+<section id="home" class="container hero">
 
-    <div class="hero-content">
-        <h1>Hello, I'm Gowtham 👋</h1>
-        <p>Full Stack Developer & AI Enthusiast</p>
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-    </div>
+  <div class="hero-text">
+    <h1>Hello, I'm Gowtham 👋</h1>
+    <p>Full Stack Developer & AI Enthusiast</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
 
-    <div class="hero-image">
-        <img src="images/gowtham.png"
-    </div>
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section class="about container">
-    <div class="about-content">
-        <h2>About Me</h2>
-
-        <p>
-            Hello! I'm <strong>Gowtham</strong>, a passionate Full Stack Developer and AI enthusiast.
-            I enjoy building intelligent and scalable web applications that solve real-world problems.
-        </p>
-
-        <p>
-            My journey started with curiosity in technology and has grown into a strong interest in 
-            Artificial Intelligence, Web Development, and problem-solving.
-        </p>
-
-        <p>
-            Currently, I’m focused on building impactful projects and improving my coding skills.
-        </p>
-    </div>
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="projects container">
-
-    <h2>My Projects</h2>
-
-    <div class="project-grid">
-
-        <!-- PROJECT 1 -->
-        <div class="project-card">
-            <h3>🤖 AI Chatbot Assistant</h3>
-            <p>
-                A smart chatbot built using OpenAI that can answer questions and simulate conversations.
-            </p>
-
-            <img src="https://kriyatec.com/wp-content/uploads/2020/05/chatbot2.jpeg" alt="Chatbot" style="width:100%; margin-top:10px;">
-
-            <div class="project-tech">
-                <span>Python</span>
-                <span>OpenAI</span>
-                <span>React</span>
-            </div>
-
-            <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-
-        <!-- PROJECT 2 -->
-        <div class="project-card">
-            <h3>🎬 Movie Recommendation System</h3>
-            <p>
-                ML-based system suggesting movies using collaborative filtering.
-            </p>
-
-            <div class="project-tech">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>ML</span>
-            </div>
-
-            <a href="#" class="btn btn-primary">View Project</a>
-        </div>
-
-    </div>
+  <div class="hero-img">
+    <img src="images/gowtham.png" alt="profile">
+  </div>
 
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="container contact">
+<!-- ABOUT -->
+<section class="container section">
+  <h2>About Me</h2>
+  <p class="about-text">
+    I'm a passionate Full Stack Developer and AI enthusiast who builds real-world intelligent systems.
+    Currently focused on AI projects, backend systems, and scalable applications.
+  </p>
+</section>
 
-    <div class="social-icons-top">
-        <a href="https://www.instagram.com/nameisgowthamadithya__7/" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
+<!-- PROJECTS -->
+<section id="projects" class="container section">
+  <h2>My Projects</h2>
 
-        <a href="https://github.com/gowtham2007123456" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
+  <div class="grid">
+
+    <div class="card">
+      <h3>🤖 AI Chatbot Assistant</h3>
+      <p>Built using OpenAI to simulate conversations and answer queries.</p>
+      <img src="https://kriyatec.com/wp-content/uploads/2020/05/chatbot2.jpeg">
     </div>
 
-    <h2>Contact Me</h2>
+    <div class="card">
+  <h3>🎬 Movie Recommendation</h3>
+  <p>ML-based recommendation using collaborative filtering.</p>
 
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button class="btn btn-primary">Send Message</button>
-    </form>
+  <img src="images/movie.png" alt="Movie Project">
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="container section">
+  <h2>Achievements</h2>
+
+  <div class="achievement">
+    <img src="images/techfest.png">
+
+    <div>
+      <h3>IIT Bombay Techfest AI Workshop</h3>
+      <p>
+        Participated in IIT Bombay Techfest workshop, gaining exposure to real-world AI systems and practices.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container section">
+  <h2>Contact Me</h2>
+
+  <form class="form">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+  </form>
 
 </section>
 
